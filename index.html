@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>XPERS</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <span class="navbar-brand mb-0 h1">Xpers</span>
+      <span class="navbar-brand mb-0 h1" id="output"></span>
+    </nav>
+   
+    <div class="container-fluid bg-light" style="min-height: 100vh">
+      <div class="container">
+        <div class="jumbotron mt-4">
+          <h1></h1>
+          <div class="input-group mb-3">
+        <input type="text"
+    class="form-control"
+    placeholder="Amount spent"
+    aria-label="Amount spent"
+    aria-describedby="spent in rupee"
+    id="input"/>
+    <div class="input-group-append">
+      <span class="input-group-text" id="spent in rupee">₹</span>
+    </div>
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="spent at">@</span>
+    </div>
+
+    <input  type="text"
+    class="form-control"
+    placeholder="spent On"
+    aria-label="spent On"
+    aria-describedby="spent at"
+    id="inpDesc"
+  />
+  <div class="input-group-append">
+    <button id="btnAdd" class="btn btn-outline-primary"
+    type="button">Add</button>
+  </div>
+</div>
+</div>
+<div>
+  <ul class="list-group" id="expenseTable">
+  </ul>
+</div>
+</div>
+</div>
+
+
+    <script src="./app.js" ></script>
+  </body>
+</html>
